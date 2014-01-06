@@ -1,0 +1,43 @@
+{
+    "name": "OKC MyType",
+    "version": "0.1.5",
+    "manifest_version": 2,
+    "description": "OKC MyType App",
+        "icons": {
+            "128": "app/images/icons/icon_128.png"
+        },
+//    "default_locale": "en",
+    //  "background": {
+    //    "scripts": [
+    //      "src/bg/background.js"
+    //    ],
+    //    "persistent": true
+    //  },
+    /*"browser_action": {
+    "default_icon": "app/images/icons/icon_19.png",
+    "default_title": "OKC MyType",
+    "default_popup": "src/browser_action/euclidActionView.html"
+  },*/
+    "app": {
+        "default_icon": "app/images/icons/icon_19.png",
+        "default_title": "OKC MyType",
+        "default_popup": "src/browser_action/euclidActionView.html",
+        "background": {
+            "scripts": ["background.js"],
+            "persistent": true
+        }
+    },
+    "permissions": [
+    "cookies",
+    "notifications",
+    "tabs",
+    "http://*/",
+    "https://*/",
+    "http://*/*",
+    "https://*/*",
+    "http://www.okcupid.com/",
+    "http://www.okcupid.com/*"
+  ]/*,
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js; object-src 'self'"
+    */
+}
